@@ -1,0 +1,19 @@
+Video de youtube:
+
+
+https://youtu.be/aUHB8EqhFpU
+
+
+
+Repositorio de GitHub:
+
+https://github.com/Jose09011712/PrototipoIS1P2021/tree/main
+
+
+DNS base de datos:
+
+clc_erp
+
+
+Usuario: JLOPEZ
+Contraseña: JLOPEZ
