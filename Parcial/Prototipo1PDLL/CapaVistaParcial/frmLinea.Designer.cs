@@ -157,6 +157,8 @@ namespace CapaVistaParcial
             this.Controls.Add(this.txtLinea);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.navegador1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLinea";
             this.Text = "frmLinea";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();

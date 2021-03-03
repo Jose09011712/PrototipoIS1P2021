@@ -74,3 +74,7 @@ D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\obj
 D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\obj\Debug\Prototipo1PMDI.csproj.CopyComplete
 D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\obj\Debug\Prototipo1PMDI.exe
 D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\obj\Debug\Prototipo1PMDI.pdb
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\bin\Debug\CapaControladorParcial.dll
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\bin\Debug\CapaModeloParcial.dll
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\bin\Debug\CapaControladorParcial.pdb
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PMDI\Prototipo1PMDI\bin\Debug\CapaModeloParcial.pdb
