@@ -157,6 +157,8 @@ namespace CapaVistaParcial
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.navegador1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMarca";
             this.Text = "frmMarca";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();

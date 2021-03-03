@@ -76,5 +76,23 @@ namespace Prototipo1PMDI
                 MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
             }
         }
+
+        private void invetariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("1302", txtUsuario.Text) == 1)
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Ingreso al PROCESO DE INVENTARIO", 1302);
+                frmInventario asignacion = new frmInventario(txtUsuario.Text, this);
+                asignacion.MdiParent = this;
+                asignacion.Show();
+            }
+            else
+            {
+                bit.user(txtUsuario.Text);
+                bit.insert("Trato de ingresar al PROCESO DE INVENTARIO", 1302);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
     }
 }

@@ -30,24 +30,24 @@ namespace CapaVistaParcial
         private void InitializeComponent()
         {
             this.navegador1 = new CapaVistaNavegador.Navegador();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtProducto = new System.Windows.Forms.TextBox();
+            this.cmbCodigoLinea = new System.Windows.Forms.ComboBox();
+            this.cmbCodigoMarca = new System.Windows.Forms.ComboBox();
+            this.txtExistencia = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.cmbLinea = new System.Windows.Forms.ComboBox();
+            this.cmbMarca = new System.Windows.Forms.ComboBox();
+            this.rdActivo = new System.Windows.Forms.RadioButton();
+            this.rdInactivo = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // navegador1
@@ -58,105 +58,120 @@ namespace CapaVistaParcial
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1412, 129);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
-            // dataGridView1
+            // dgvDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(601, 149);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(824, 383);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(508, 149);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.ReadOnly = true;
+            this.dgvDatos.RowHeadersWidth = 51;
+            this.dgvDatos.RowTemplate.Height = 24;
+            this.dgvDatos.Size = new System.Drawing.Size(917, 383);
+            this.dgvDatos.TabIndex = 1;
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtCodigo.Location = new System.Drawing.Point(144, 149);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(210, 22);
+            this.txtCodigo.TabIndex = 2;
+            this.txtCodigo.Tag = "codigo_producto";
             // 
-            // textBox2
+            // txtProducto
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 187);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(346, 109);
-            this.textBox2.TabIndex = 3;
+            this.txtProducto.Location = new System.Drawing.Point(144, 187);
+            this.txtProducto.Multiline = true;
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtProducto.Size = new System.Drawing.Size(346, 109);
+            this.txtProducto.TabIndex = 3;
+            this.txtProducto.Tag = "nombre_producto";
             // 
-            // comboBox1
+            // cmbCodigoLinea
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(511, 313);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 24);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbCodigoLinea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCodigoLinea.FormattingEnabled = true;
+            this.cmbCodigoLinea.Location = new System.Drawing.Point(1556, 290);
+            this.cmbCodigoLinea.Name = "cmbCodigoLinea";
+            this.cmbCodigoLinea.Size = new System.Drawing.Size(72, 24);
+            this.cmbCodigoLinea.TabIndex = 4;
+            this.cmbCodigoLinea.Tag = "codigo_linea";
+            this.cmbCodigoLinea.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cmbCodigoMarca
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(511, 343);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(72, 24);
-            this.comboBox2.TabIndex = 5;
+            this.cmbCodigoMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCodigoMarca.FormattingEnabled = true;
+            this.cmbCodigoMarca.Location = new System.Drawing.Point(1556, 320);
+            this.cmbCodigoMarca.Name = "cmbCodigoMarca";
+            this.cmbCodigoMarca.Size = new System.Drawing.Size(72, 24);
+            this.cmbCodigoMarca.TabIndex = 5;
+            this.cmbCodigoMarca.Tag = "codigo_marca";
+            this.cmbCodigoMarca.SelectedIndexChanged += new System.EventHandler(this.cmbCodigoMarca_SelectedIndexChanged);
             // 
-            // textBox3
+            // txtExistencia
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 382);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(346, 22);
-            this.textBox3.TabIndex = 6;
+            this.txtExistencia.Location = new System.Drawing.Point(144, 382);
+            this.txtExistencia.Name = "txtExistencia";
+            this.txtExistencia.Size = new System.Drawing.Size(346, 22);
+            this.txtExistencia.TabIndex = 6;
+            this.txtExistencia.Tag = "existencia_producto";
             // 
-            // textBox4
+            // txtEstado
             // 
-            this.textBox4.Location = new System.Drawing.Point(144, 464);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(116, 22);
-            this.textBox4.TabIndex = 7;
+            this.txtEstado.Location = new System.Drawing.Point(144, 464);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(116, 22);
+            this.txtEstado.TabIndex = 7;
+            this.txtEstado.Tag = "estatus_producto";
+            this.txtEstado.Visible = false;
+            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
             // 
-            // comboBox3
+            // cmbLinea
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(144, 313);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(346, 24);
-            this.comboBox3.TabIndex = 8;
+            this.cmbLinea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLinea.FormattingEnabled = true;
+            this.cmbLinea.Location = new System.Drawing.Point(144, 313);
+            this.cmbLinea.Name = "cmbLinea";
+            this.cmbLinea.Size = new System.Drawing.Size(346, 24);
+            this.cmbLinea.TabIndex = 8;
+            this.cmbLinea.SelectedIndexChanged += new System.EventHandler(this.cmbLinea_SelectedIndexChanged);
             // 
-            // comboBox4
+            // cmbMarca
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(144, 343);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(346, 24);
-            this.comboBox4.TabIndex = 9;
+            this.cmbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMarca.FormattingEnabled = true;
+            this.cmbMarca.Location = new System.Drawing.Point(144, 343);
+            this.cmbMarca.Name = "cmbMarca";
+            this.cmbMarca.Size = new System.Drawing.Size(346, 24);
+            this.cmbMarca.TabIndex = 9;
+            this.cmbMarca.SelectedIndexChanged += new System.EventHandler(this.cmbMarca_SelectedIndexChanged);
             // 
-            // radioButton1
+            // rdActivo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(144, 425);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdActivo.AutoSize = true;
+            this.rdActivo.Location = new System.Drawing.Point(144, 425);
+            this.rdActivo.Name = "rdActivo";
+            this.rdActivo.Size = new System.Drawing.Size(67, 21);
+            this.rdActivo.TabIndex = 10;
+            this.rdActivo.TabStop = true;
+            this.rdActivo.Text = "Activo";
+            this.rdActivo.UseVisualStyleBackColor = true;
+            this.rdActivo.CheckedChanged += new System.EventHandler(this.rdActivo_CheckedChanged);
             // 
-            // radioButton2
+            // rdInactivo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(286, 425);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 21);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdInactivo.AutoSize = true;
+            this.rdInactivo.Location = new System.Drawing.Point(286, 425);
+            this.rdInactivo.Name = "rdInactivo";
+            this.rdInactivo.Size = new System.Drawing.Size(77, 21);
+            this.rdInactivo.TabIndex = 11;
+            this.rdInactivo.TabStop = true;
+            this.rdInactivo.Text = "Inactivo";
+            this.rdInactivo.UseVisualStyleBackColor = true;
+            this.rdInactivo.CheckedChanged += new System.EventHandler(this.rdInactivo_CheckedChanged);
             // 
             // label1
             // 
@@ -216,28 +231,31 @@ namespace CapaVistaParcial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1461, 544);
+            this.ClientSize = new System.Drawing.Size(1445, 544);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.rdInactivo);
+            this.Controls.Add(this.rdActivo);
+            this.Controls.Add(this.cmbMarca);
+            this.Controls.Add(this.cmbLinea);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtExistencia);
+            this.Controls.Add(this.cmbCodigoMarca);
+            this.Controls.Add(this.cmbCodigoLinea);
+            this.Controls.Add(this.txtProducto);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.navegador1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmInventario";
             this.Text = "frmInventario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmInventario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,17 +264,17 @@ namespace CapaVistaParcial
         #endregion
 
         private CapaVistaNavegador.Navegador navegador1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtProducto;
+        private System.Windows.Forms.ComboBox cmbCodigoLinea;
+        private System.Windows.Forms.ComboBox cmbCodigoMarca;
+        private System.Windows.Forms.TextBox txtExistencia;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.ComboBox cmbLinea;
+        private System.Windows.Forms.ComboBox cmbMarca;
+        private System.Windows.Forms.RadioButton rdActivo;
+        private System.Windows.Forms.RadioButton rdInactivo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

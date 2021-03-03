@@ -119,3 +119,5 @@ D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaVistaParcial\o
 D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaVistaParcial\obj\Debug\CapaVistaParcial.csproj.CopyComplete
 D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaVistaParcial\obj\Debug\CapaVistaParcial.dll
 D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaVistaParcial\obj\Debug\CapaVistaParcial.pdb
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaVistaParcial\bin\Debug\CapaModeloParcial.dll
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaVistaParcial\bin\Debug\CapaModeloParcial.pdb
