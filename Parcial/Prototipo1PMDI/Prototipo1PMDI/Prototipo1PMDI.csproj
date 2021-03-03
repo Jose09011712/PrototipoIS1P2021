@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVistaParcial">
+      <HintPath>..\..\Prototipo1PDLL\CapaVistaParcial\bin\Debug\CapaVistaParcial.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaSeguridad">
+      <HintPath>..\Navegador Y seguridad\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
