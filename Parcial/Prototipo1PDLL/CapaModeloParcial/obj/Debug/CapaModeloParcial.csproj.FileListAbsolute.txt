@@ -1,6 +1,0 @@
-D:\Escritorio\Prototipo1PDLL\CapaModeloParcial\bin\Debug\CapaModeloParcial.dll
-D:\Escritorio\Prototipo1PDLL\CapaModeloParcial\bin\Debug\CapaModeloParcial.pdb
-D:\Escritorio\Prototipo1PDLL\CapaModeloParcial\obj\Debug\CapaModeloParcial.csprojAssemblyReference.cache
-D:\Escritorio\Prototipo1PDLL\CapaModeloParcial\obj\Debug\CapaModeloParcial.csproj.CoreCompileInputs.cache
-D:\Escritorio\Prototipo1PDLL\CapaModeloParcial\obj\Debug\CapaModeloParcial.dll
-D:\Escritorio\Prototipo1PDLL\CapaModeloParcial\obj\Debug\CapaModeloParcial.pdb
