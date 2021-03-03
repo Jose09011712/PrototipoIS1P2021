@@ -41,6 +41,15 @@ namespace Prototipo1PMDI
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambioDeContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoDeAplicacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionPerfilYAplicacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoModuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perflToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionDeAplicacionesAPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +118,7 @@ namespace Prototipo1PMDI
             // invetariosToolStripMenuItem
             // 
             this.invetariosToolStripMenuItem.Name = "invetariosToolStripMenuItem";
-            this.invetariosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.invetariosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.invetariosToolStripMenuItem.Text = "Invetarios";
             this.invetariosToolStripMenuItem.Click += new System.EventHandler(this.invetariosToolStripMenuItem_Click);
             // 
@@ -121,6 +130,8 @@ namespace Prototipo1PMDI
             // 
             // herramientasToolStripMenuItem
             // 
+            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seguridadToolStripMenuItem});
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
             this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
             this.herramientasToolStripMenuItem.Text = "Herramientas";
@@ -138,6 +149,76 @@ namespace Prototipo1PMDI
             this.txtUsuario.Size = new System.Drawing.Size(580, 22);
             this.txtUsuario.TabIndex = 3;
             this.txtUsuario.Visible = false;
+            // 
+            // seguridadToolStripMenuItem
+            // 
+            this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cambioDeContraseñaToolStripMenuItem,
+            this.mantenimientoDeUsuariosToolStripMenuItem,
+            this.mantenimientoDeAplicacionesToolStripMenuItem,
+            this.asignacionPerfilYAplicacionToolStripMenuItem,
+            this.mantenimientoModuloToolStripMenuItem,
+            this.perflToolStripMenuItem});
+            this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.seguridadToolStripMenuItem.Text = "Seguridad";
+            // 
+            // cambioDeContraseñaToolStripMenuItem
+            // 
+            this.cambioDeContraseñaToolStripMenuItem.Name = "cambioDeContraseñaToolStripMenuItem";
+            this.cambioDeContraseñaToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.cambioDeContraseñaToolStripMenuItem.Text = "Cambio de contraseña";
+            this.cambioDeContraseñaToolStripMenuItem.Click += new System.EventHandler(this.cambioDeContraseñaToolStripMenuItem_Click);
+            // 
+            // mantenimientoDeUsuariosToolStripMenuItem
+            // 
+            this.mantenimientoDeUsuariosToolStripMenuItem.Name = "mantenimientoDeUsuariosToolStripMenuItem";
+            this.mantenimientoDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.mantenimientoDeUsuariosToolStripMenuItem.Text = "Mantenimiento de usuarios";
+            this.mantenimientoDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoDeUsuariosToolStripMenuItem_Click);
+            // 
+            // mantenimientoDeAplicacionesToolStripMenuItem
+            // 
+            this.mantenimientoDeAplicacionesToolStripMenuItem.Name = "mantenimientoDeAplicacionesToolStripMenuItem";
+            this.mantenimientoDeAplicacionesToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.mantenimientoDeAplicacionesToolStripMenuItem.Text = "Mantenimiento de aplicaciones";
+            this.mantenimientoDeAplicacionesToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoDeAplicacionesToolStripMenuItem_Click);
+            // 
+            // asignacionPerfilYAplicacionToolStripMenuItem
+            // 
+            this.asignacionPerfilYAplicacionToolStripMenuItem.Name = "asignacionPerfilYAplicacionToolStripMenuItem";
+            this.asignacionPerfilYAplicacionToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.asignacionPerfilYAplicacionToolStripMenuItem.Text = "Asignacion perfil y aplicacion";
+            this.asignacionPerfilYAplicacionToolStripMenuItem.Click += new System.EventHandler(this.asignacionPerfilYAplicacionToolStripMenuItem_Click);
+            // 
+            // mantenimientoModuloToolStripMenuItem
+            // 
+            this.mantenimientoModuloToolStripMenuItem.Name = "mantenimientoModuloToolStripMenuItem";
+            this.mantenimientoModuloToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.mantenimientoModuloToolStripMenuItem.Text = "Mantenimiento Modulo";
+            this.mantenimientoModuloToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoModuloToolStripMenuItem_Click);
+            // 
+            // perflToolStripMenuItem
+            // 
+            this.perflToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mantenimientoPerfilToolStripMenuItem,
+            this.asignacionDeAplicacionesAPerfilToolStripMenuItem});
+            this.perflToolStripMenuItem.Name = "perflToolStripMenuItem";
+            this.perflToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.perflToolStripMenuItem.Text = "Perfl";
+            // 
+            // mantenimientoPerfilToolStripMenuItem
+            // 
+            this.mantenimientoPerfilToolStripMenuItem.Name = "mantenimientoPerfilToolStripMenuItem";
+            this.mantenimientoPerfilToolStripMenuItem.Size = new System.Drawing.Size(323, 26);
+            this.mantenimientoPerfilToolStripMenuItem.Text = "Mantenimiento Perfil";
+            this.mantenimientoPerfilToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoPerfilToolStripMenuItem_Click);
+            // 
+            // asignacionDeAplicacionesAPerfilToolStripMenuItem
+            // 
+            this.asignacionDeAplicacionesAPerfilToolStripMenuItem.Name = "asignacionDeAplicacionesAPerfilToolStripMenuItem";
+            this.asignacionDeAplicacionesAPerfilToolStripMenuItem.Size = new System.Drawing.Size(323, 26);
+            this.asignacionDeAplicacionesAPerfilToolStripMenuItem.Text = "Asignacion de aplicaciones a perfil";
             // 
             // Form1
             // 
@@ -173,6 +254,15 @@ namespace Prototipo1PMDI
         private System.Windows.Forms.ToolStripMenuItem invetariosToolStripMenuItem;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambioDeContraseñaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoDeUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoDeAplicacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignacionPerfilYAplicacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoModuloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perflToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoPerfilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignacionDeAplicacionesAPerfilToolStripMenuItem;
     }
 }
 
