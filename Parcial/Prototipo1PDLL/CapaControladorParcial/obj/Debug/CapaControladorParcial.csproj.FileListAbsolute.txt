@@ -1,0 +1,9 @@
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaControladorParcial.dll
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaControladorParcial.pdb
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csprojAssemblyReference.cache
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csproj.CoreCompileInputs.cache
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.dll
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.pdb
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaModeloParcial.dll
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaModeloParcial.pdb
+D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csproj.CopyComplete
