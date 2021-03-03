@@ -33,13 +33,13 @@ namespace CapaVistaParcial
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.rdActivo = new System.Windows.Forms.RadioButton();
+            this.rdInactivo = new System.Windows.Forms.RadioButton();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // navegador1
@@ -50,6 +50,7 @@ namespace CapaVistaParcial
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1412, 129);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // label1
             // 
@@ -78,81 +79,87 @@ namespace CapaVistaParcial
             this.label3.TabIndex = 3;
             this.label3.Text = "Estado";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 163);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Tag = "codigo_marca";
+            this.txtCodigo.Location = new System.Drawing.Point(136, 163);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(225, 22);
+            this.txtCodigo.TabIndex = 4;
+            this.txtCodigo.Tag = "codigo_marca";
             // 
-            // textBox2
+            // txtMarca
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 214);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(363, 134);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Tag = "nombre_marca";
+            this.txtMarca.Location = new System.Drawing.Point(136, 214);
+            this.txtMarca.Multiline = true;
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMarca.Size = new System.Drawing.Size(363, 134);
+            this.txtMarca.TabIndex = 5;
+            this.txtMarca.Tag = "nombre_marca";
             // 
-            // textBox3
+            // txtEstado
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 419);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Tag = "estatus_marca";
+            this.txtEstado.Location = new System.Drawing.Point(136, 419);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 22);
+            this.txtEstado.TabIndex = 6;
+            this.txtEstado.Tag = "estatus_marca";
+            this.txtEstado.Visible = false;
+            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
             // 
-            // radioButton1
+            // rdActivo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(136, 377);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdActivo.AutoSize = true;
+            this.rdActivo.Location = new System.Drawing.Point(136, 377);
+            this.rdActivo.Name = "rdActivo";
+            this.rdActivo.Size = new System.Drawing.Size(67, 21);
+            this.rdActivo.TabIndex = 7;
+            this.rdActivo.TabStop = true;
+            this.rdActivo.Text = "Activo";
+            this.rdActivo.UseVisualStyleBackColor = true;
+            this.rdActivo.CheckedChanged += new System.EventHandler(this.rdActivo_CheckedChanged);
             // 
-            // radioButton2
+            // rdInactivo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(287, 377);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 21);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdInactivo.AutoSize = true;
+            this.rdInactivo.Location = new System.Drawing.Point(287, 377);
+            this.rdInactivo.Name = "rdInactivo";
+            this.rdInactivo.Size = new System.Drawing.Size(77, 21);
+            this.rdInactivo.TabIndex = 8;
+            this.rdInactivo.TabStop = true;
+            this.rdInactivo.Text = "Inactivo";
+            this.rdInactivo.UseVisualStyleBackColor = true;
+            this.rdInactivo.CheckedChanged += new System.EventHandler(this.rdInactivo_CheckedChanged);
             // 
-            // dataGridView1
+            // dgvDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(531, 163);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(894, 293);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(531, 163);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.ReadOnly = true;
+            this.dgvDatos.RowHeadersWidth = 51;
+            this.dgvDatos.RowTemplate.Height = 24;
+            this.dgvDatos.Size = new System.Drawing.Size(894, 293);
+            this.dgvDatos.TabIndex = 9;
             // 
             // frmMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1447, 483);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgvDatos);
+            this.Controls.Add(this.rdInactivo);
+            this.Controls.Add(this.rdActivo);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.navegador1);
             this.Name = "frmMarca";
             this.Text = "frmMarca";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,11 +171,11 @@ namespace CapaVistaParcial
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.RadioButton rdActivo;
+        private System.Windows.Forms.RadioButton rdInactivo;
+        private System.Windows.Forms.DataGridView dgvDatos;
     }
 }

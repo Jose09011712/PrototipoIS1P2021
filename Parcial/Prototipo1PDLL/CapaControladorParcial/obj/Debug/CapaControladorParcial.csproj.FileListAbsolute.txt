@@ -7,3 +7,12 @@ D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorPar
 D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaModeloParcial.dll
 D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaModeloParcial.pdb
 D:\Escritorio\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csproj.CopyComplete
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaControladorParcial.dll
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaControladorParcial.pdb
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaModeloParcial.dll
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\bin\Debug\CapaModeloParcial.pdb
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csprojAssemblyReference.cache
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.csproj.CopyComplete
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.dll
+D:\Documentos\GitHub\PrototipoIS1P2021\Parcial\Prototipo1PDLL\CapaControladorParcial\obj\Debug\CapaControladorParcial.pdb

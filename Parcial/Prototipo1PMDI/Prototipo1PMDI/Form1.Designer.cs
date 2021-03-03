@@ -32,13 +32,15 @@ namespace Prototipo1PMDI
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lineaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invetariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.invetariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lineaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +62,8 @@ namespace Prototipo1PMDI
             // 
             // inicioToolStripMenuItem
             // 
+            this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cerrarSesionToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.inicioToolStripMenuItem.Text = "Abrir";
@@ -73,6 +77,20 @@ namespace Prototipo1PMDI
             this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
             // 
+            // lineaToolStripMenuItem
+            // 
+            this.lineaToolStripMenuItem.Name = "lineaToolStripMenuItem";
+            this.lineaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lineaToolStripMenuItem.Text = "Linea";
+            this.lineaToolStripMenuItem.Click += new System.EventHandler(this.lineaToolStripMenuItem_Click);
+            // 
+            // marcaToolStripMenuItem
+            // 
+            this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
+            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.marcaToolStripMenuItem.Text = "Marca";
+            this.marcaToolStripMenuItem.Click += new System.EventHandler(this.marcaToolStripMenuItem_Click);
+            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -80,6 +98,12 @@ namespace Prototipo1PMDI
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.procesosToolStripMenuItem.Text = "Procesos";
+            // 
+            // invetariosToolStripMenuItem
+            // 
+            this.invetariosToolStripMenuItem.Name = "invetariosToolStripMenuItem";
+            this.invetariosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.invetariosToolStripMenuItem.Text = "Invetarios";
             // 
             // informesToolStripMenuItem
             // 
@@ -99,34 +123,33 @@ namespace Prototipo1PMDI
             this.ayudasToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.ayudasToolStripMenuItem.Text = "Ayudas";
             // 
-            // invetariosToolStripMenuItem
+            // txtUsuario
             // 
-            this.invetariosToolStripMenuItem.Name = "invetariosToolStripMenuItem";
-            this.invetariosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.invetariosToolStripMenuItem.Text = "Invetarios";
+            this.txtUsuario.Location = new System.Drawing.Point(12, 677);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(580, 22);
+            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Visible = false;
             // 
-            // lineaToolStripMenuItem
+            // cerrarSesionToolStripMenuItem
             // 
-            this.lineaToolStripMenuItem.Name = "lineaToolStripMenuItem";
-            this.lineaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.lineaToolStripMenuItem.Text = "Linea";
-            // 
-            // marcaToolStripMenuItem
-            // 
-            this.marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-            this.marcaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.marcaToolStripMenuItem.Text = "Marca";
+            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1392, 727);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "0901-17-12 José López";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -146,6 +169,8 @@ namespace Prototipo1PMDI
         private System.Windows.Forms.ToolStripMenuItem lineaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem invetariosToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
     }
 }
 
